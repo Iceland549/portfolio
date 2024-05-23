@@ -1,13 +1,16 @@
 import '../../styles/main.css';
 import { Link } from 'react-router-dom';
 
-
 function Home() {
     return (
         <div className='home'>
-            <h1>Mon Portfolio</h1>
+            <h1>Si peu de choses...</h1>
             <article>
-                Mon Profil...
+                <p>Semblable à un ruisseau philosophique, je m&apos;écoule sereinement dans cette nouvelle voie, abreuvé de multiples sources créatives. Bien que novice, une soif d&apos;apprendre m&apos;anime sans relâche. Avec patience, je cisèle mes compétences en développement web, gravissant chaque jour de nouveaux sommets. Parfois enveloppé d&apos;un mystère insondable lorsque concentré.</p>
+
+                <p>Mais au-delà des sentiers techniques, l&apos;humain guide mes pas. L&apos;empathie, l&apos;écoute et la chaleur sont les vents tissant des liens véritables au sein des équipes. Un rayon facétieux vient alors réchauffer les cœurs.</p>
+
+                <p>Si vous recherchez un intégrateur zen mais déterminé, ouvert d&apos;esprit mais parfois dans sa bulle, respectueux mais jamais austère, laissez-moi insuffler la vie à vos projets. Ensemble, nous créerons des expériences harmonieuses et mémorables.</p>
             </article>
             <nav>
                 <Link to={'/Projects'}>
