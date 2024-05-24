@@ -1,9 +1,13 @@
 import '../../styles/main.css';
 import { Link } from 'react-router-dom';
+import Scroll from '../../components/Scroll';
 
 function Projects() {
+    Scroll();
+
     return (
         <div className='projects'>
+            <a id="top"></a>
             <h1>Mes Projets</h1>
             <article>
                 <h2>Application bancaire avec React/Redux</h2>
@@ -31,10 +35,10 @@ function Projects() {
                 <p>Lien GitHub : <a href="https://github.com/Iceland549/ninacarducci.github.io" target="_blank" rel="noopener noreferrer" className="github-link">https://github.com/Iceland549/ninacarducci.github.io</a></p>
             </article>
             <nav>
-                <Link to={'/'}>
+                <Link to={'/#top'}>
                     <p>Accueil</p>
                 </Link>
-                <Link to={'/Skills'}>
+                <Link to={'/Skills#top'}>
                     <p>Mes Skills</p>
                 </Link>
             </nav>

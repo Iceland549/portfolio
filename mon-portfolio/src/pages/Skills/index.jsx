@@ -1,9 +1,13 @@
 import '../../styles/main.css';
 import { Link } from 'react-router-dom';
+import Scroll from '../../components/Scroll';
 
 function Skills() {
+    Scroll();
+
     return (
         <div className='skills'>
+            <a id="top"></a>
             <h1>Compétences</h1>
             <article>
                 <section>
@@ -75,10 +79,10 @@ function Skills() {
                 </section>
             </article>
             <nav>
-                <Link to={'/'}>
+                <Link to={'/#top'}>
                     <p>Accueil</p>
                 </Link>
-                <Link to={'/Projects'}>
+                <Link to={'/Projects#top'}>
                     <p>Mes Projets</p>
                 </Link>
             </nav>
