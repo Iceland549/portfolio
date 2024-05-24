@@ -6,9 +6,28 @@ body {
     line-height: 1.6;
 }
 
-h1 {
+.footer {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+h1,
+h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
+    color: #2c3e50;
 }
 
 nav a {
@@ -25,7 +44,7 @@ nav a:hover {
 .projects,
 .skills,
 .error {
-    max-width: 800px;
+    max-width: 90%;
     margin: 2em auto;
     padding: 1em;
     background: #fff;
@@ -58,6 +77,10 @@ a:hover {
     animation: fadeInUp 0.5s forwards;
 }
 
+.github-link {
+    word-break: break-all;
+}
+
 @keyframes fadeInUp {
     to {
         opacity: 1;
@@ -65,7 +88,10 @@ a:hover {
     }
 }
 
-.home article {
+.home article,
+.projects article,
+.skills article,
+.error article {
     background-color: #fff;
     padding: 2rem;
     border-radius: 8px;
@@ -73,19 +99,26 @@ a:hover {
     margin-bottom: 2rem;
 }
 
-.home article p {
+.home article p,
+.projects article p,
+.skills article p,
+.error article p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 1rem;
 }
 
-.home nav {
+.home nav,
+.projects nav,
+.skills nav {
     display: flex;
     justify-content: center;
     gap: 1rem;
 }
 
-.home nav a {
+.home nav a,
+.projects nav a,
+.skills nav a {
     text-decoration: none;
     color: #333;
     background-color: #fff;
@@ -95,6 +128,32 @@ a:hover {
     transition: all 0.3s ease;
 }
 
-.home nav a:hover {
+.home nav a:hover,
+.projects nav a:hover,
+.skills nav a:hover {
     background-color: #f2f2f2;
+}
+
+@media (max-width: 320px) {
+
+    .home,
+    .projects,
+    .skills,
+    .error {
+        max-width: 700px;
+    }
+
+    .github-link {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .home,
+    .projects,
+    .skills,
+    .error {
+        max-width: 800px;
+    }
 }
