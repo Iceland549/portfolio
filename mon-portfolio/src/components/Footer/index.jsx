@@ -2,7 +2,11 @@
 function Footer() {
     return (
         <footer className="footer">
-            <p className="footer-text">2024 Mon portfolio</p>
+            <div className="footer-content">
+                <p>CHAU Denis</p>
+                <p>iceland549@gmail.com</p>
+                <p>2024 Mon Portfolio</p>
+            </div>
         </footer>
     );
 }
