@@ -37,23 +37,10 @@ h2 {
 nav a {
     margin-right: 1em;
     text-decoration: none;
-    color: #007acc;
 }
 
 nav a:hover {
     text-decoration: underline;
-}
-
-.home,
-.projects,
-.skills,
-.error {
-    max-width: 90%;
-    margin: 2em auto;
-    padding: 1em;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -96,7 +83,6 @@ a:hover {
 .projects article,
 .skills article,
 .error article {
-    background-color: #fff;
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
