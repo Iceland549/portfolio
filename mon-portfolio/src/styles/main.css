@@ -1,9 +1,23 @@
+:root {
+    --background-color: rgb(240, 244, 239);
+    --primary-color: #c3ebc3;
+    --accent-color: hsl(120, 78%, 80%);
+    --secondary-color: #34ef0e;
+    --text-color: #333;
+    --border-radius: 8px;
+}
+
 body {
     margin: 0;
     font-family: 'Noto Serif JP', serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background: url('../../src/assets/zen\ .jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: var(--text-color);
     line-height: 1.6;
+    filter: brightness(0.7) contrast(1.2) saturate(0.8);
 }
 
 .main-title {
@@ -11,8 +25,7 @@ body {
 }
 
 .footer {
-    background-color: #f5f5f5;
-    color: #333;
+    color: var(--text-color);
     padding: 20px;
     text-align: center;
 }
@@ -31,7 +44,7 @@ h1,
 h2 {
     font-size: 2em;
     margin-bottom: 0.5em;
-    color: #2c3e50;
+    color: var(--text-color);
 }
 
 nav a {
@@ -56,7 +69,42 @@ a {
 }
 
 a:hover {
-    color: #005f99;
+    color: var(--primary-color);
+}
+
+.github-link {
+    word-break: break-all;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.projects h1,
+.skills h1 {
+    padding-bottom: 1em;
+}
+
+.home,
+.projects,
+.skills,
+.error {
+    max-width: 90%;
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
 }
 
 .home,
@@ -65,18 +113,8 @@ a:hover {
 .error {
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeInUp 0.5s forwards;
-}
-
-.github-link {
-    word-break: break-all;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: 0.3s;
 }
 
 .home article,
@@ -84,9 +122,18 @@ a:hover {
 .skills article,
 .error article {
     padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(1, 1, 1, 1.1);
     margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+    filter: brightness(0.9);
+}
+
+.home article:hover,
+.projects article:hover,
+.skills article:hover,
+.error article:hover {
+    transform: scale(1.02);
 }
 
 .home article p,
@@ -104,25 +151,41 @@ a:hover {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 3em;
 }
 
 .home nav a,
 .projects nav a,
 .skills nav a {
+    margin-right: 1em;
     text-decoration: none;
-    color: #333;
-    background-color: #fff;
+    color: var(--text-color);
     padding: 0.5rem 1rem;
-    border-radius: 4px;
+    border-radius: var(--border-radius);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .home nav a:hover,
 .projects nav a:hover,
 .skills nav a:hover {
-    background-color: #f2f2f2;
+    transform: translateY(-2px);
+    background-color: var(--accent-color);
 }
+
+.home nav a p,
+.projects nav a p,
+.skills nav a p {
+    color: var(--accent-color);
+}
+
+.home nav a:hover p,
+.projects nav a:hover p,
+.skills nav a:hover p {
+    color: var(--text-color);
+}
+
+
 
 @media (max-width: 320px) {
 
@@ -145,5 +208,6 @@ a:hover {
     .skills,
     .error {
         max-width: 800px;
+        padding: 3em;
     }
 }
