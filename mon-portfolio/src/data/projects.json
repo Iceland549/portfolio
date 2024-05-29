@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "title": "Application bancaire avec React/Redux",
+        "description": [
+            "Développement du front-end d'une application bancaire en ligne utilisant React pour une interface utilisateur réactive et performante. Intégration de Redux pour une gestion d'état cohérente à travers l'application.",
+            "Connexion fluide avec le back-end via des appels API REST, acquérant ainsi une expérience pratique du développement full-stack. Utilisation de Swagger pour documenter clairement l'API et faciliter sa maintenance",
+            "Renforcement des compétences en React, Redux et Node.js dans un projet complet alliant rigueur technique et élégance minimaliste.",
+            "Ce projet a permis de renforcer les compétences en intégration front-end/back-end, en gestion d'état avec Redux, en documentation d'API avec Swagger, ainsi qu'en développement full-stack avec Node.js, tout en cultivant une approche minimaliste et élégante."
+        ],
+        "link": "https://github.com/Iceland549/argentbank-frontend"
+    },
+    {
+        "id": 2,
+        "title": "Application de location immobilière avec React",
+        "description": [
+            "Développement du front-end d'une application web de location immobilière en utilisant React, une bibliothèque JavaScript populaire pour créer des interfaces utilisateur réactives et modernes.",
+            "Mise en place d'un routage efficace entre les différentes pages grâce à React Router, permettant une navigation fluide dans l'application. Utilisation de Create React App pour une configuration initiale simplifiée et de Node.js pour l'exécution du code JavaScript côté serveur.",
+            "Implémentation de composants React pour une logique de présentation des données optimisée et une structure de code modulaire. Intégration de SASS pour une gestion élégante des styles CSS et d'animations CSS pour améliorer l'expérience utilisateur.",
+            "Ce projet a permis de renforcer les compétences en React, React Router, SASS et animations CSS, tout en développant une application web interactive et visuellement attrayante."
+        ],
+        "link": "https://github.com/Iceland549/kasa"
+    },
+    {
+        "id": 3,
+        "title": "Débogage d'une application avec React",
+        "description": [
+            "Analyse approfondie du code existant d'un site web one-page à l'aide des Chrome DevTools pour identifier et comprendre les problèmes et bugs signalés.",
+            "Résolution des bugs et problèmes identifiés en utilisant des compétences en JavaScript et les outils spécifiques à React, comme React Developer Tools.",
+            "Rédaction d'un cahier de recette détaillé pour documenter les scénarios de test unitaires et fonctionnels nécessaires à la vérification du bon fonctionnement du site. Utilisation de Yarn comme gestionnaire de packages et de Node.js pour exécuter le code JavaScript côté serveur, facilitant la gestion des dépendances et l'exécution de tests locaux. Versionning du travail avec GitHub et utilisation de Visual Studio Code comme éditeur de code pour le développement et le débogage.",
+            "Ce projet a permis de développer des compétences cruciales en débogage, en rédaction de cahiers de recette et en utilisation d'outils tels que React Developer Tools, Yarn et Node.js, tout en appliquant une approche rigoureuse et méthodique pour assurer la qualité et la fiabilité du site web."
+        ],
+        "link": "https://github.com/Iceland549/Debuggez-une-application-React"
+    },
+    {
+        "id": 4,
+        "title": "Optimisation SEO et accessibilité d'un site de photographe",
+        "description": [
+            "Identification des problèmes de chargement et de référencement du site à l'aide d'outils tels que Lighthouse et Wave.",
+            "Proposition de recommandations pour améliorer la vitesse de chargement, la structure du code et le référencement naturel (SEO).",
+            "Implémentation des améliorations proposées en modifiant directement le code du site, dans le but d'optimiser les performances et l'accessibilité pour un meilleur référencement sur les moteurs de recherche. Création d'un rapport détaillé illustrant les résultats avant et après les modifications, comprenant des captures d'écran des audits, des explications sur les changements apportés et leur impact sur le SEO et l'accessibilité.",
+            "Ce projet a permis de développer des compétences essentielles en optimisation du référencement (SEO) et de l'accessibilité, tout en mettant en pratique des techniques d'analyse et d'amélioration des performances d'un site web, contribuant ainsi à une meilleure expérience utilisateur et une plus grande visibilité en ligne."
+        ],
+        "link": "https://github.com/Iceland549/ninacarducci.github.io"
+    }
+]
