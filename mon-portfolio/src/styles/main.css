@@ -1,5 +1,6 @@
 :root {
-    --background-color: rgb(240, 244, 239);
+    --background-color: hsl(120, 78%, 80%);
+    ;
     --primary-color: #c3ebc3;
     --accent-color: hsl(120, 78%, 80%);
     --secondary-color: #34ef0e;
@@ -10,7 +11,7 @@
 body {
     margin: 0;
     font-family: 'Noto Serif JP', serif;
-    background: url('../../src/assets/zen\ .jpg') no-repeat center center fixed;
+    background: url('../../src/assets/zen.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -185,7 +186,29 @@ a:hover {
     color: var(--text-color);
 }
 
+.project h3 {
+    margin-right: 1em;
+    text-decoration: none;
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
 
+.project h3:hover {
+    transform: translateY(-2px);
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.modal-content {
+    background-color: var(--background-color);
+    margin: 1em;
+    padding: 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
 
 @media (max-width: 320px) {
 
@@ -198,6 +221,14 @@ a:hover {
 
     .github-link {
         font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 }
 
