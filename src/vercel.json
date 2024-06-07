@@ -3,6 +3,14 @@
       {
         "source": "/(.*)",
         "destination": "/index.html"
+      },
+      {
+        "source": "/Projects(.*)",
+        "destination": "/Projects"
+      },
+      {
+        "source": "/Skills(.*)",
+        "destination": "/Skills"
       }
     ]
   }
