@@ -11,8 +11,12 @@ const Scroll = () => {
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
+        } else {
+            window.scrollTo(0, 0);
         }
     }, [location]);
+
+    return null;
 };
 
 export default Scroll;

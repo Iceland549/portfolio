@@ -16,10 +16,10 @@ function Home() {
                 <p>Si vous recherchez un intégrateur zen mais déterminé, ouvert d&apos;esprit mais parfois dans sa bulle, respectueux mais jamais austère, laissez-moi insuffler la vie à vos projets. Ensemble, nous créerons des expériences harmonieuses et mémorables.</p>
             </article>
             <nav>
-                <Link to={'/Projects#top'}>
+                <Link to={'/Projects'}>
                     <p>Mes Projets</p>
                 </Link>
-                <Link to={'/Skills#top'}>
+                <Link to={'/Skills'}>
                     <p>Mes Skills</p>
                 </Link>
             </nav>

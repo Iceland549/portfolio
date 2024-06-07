@@ -55,10 +55,10 @@ function Projects() {
                 />
             </article>
             <nav>
-                <Link to={'/#top'}>
+                <Link to={'/'}>
                     <p>Accueil</p>
                 </Link>
-                <Link to={'/Skills#top'}>
+                <Link to={'/Skills'}>
                     <p>Mes Skills</p>
                 </Link>
             </nav>

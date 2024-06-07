@@ -79,10 +79,10 @@ function Skills() {
                 </section>
             </article>
             <nav>
-                <Link to={'/#top'}>
+                <Link to={'/'}>
                     <p>Accueil</p>
                 </Link>
-                <Link to={'/Projects#top'}>
+                <Link to={'/Projects'}>
                     <p>Mes Projets</p>
                 </Link>
             </nav>
