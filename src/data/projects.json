@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "MagicTheBeginning (MTB)",
-    "description": "Plateforme de jeu de cartes en architecture microservices avec authentification JWT sécurisée, gestion de decks/cartes, sessions de jeu, et IA basique. Intégration SQL Server (auth) et MongoDB (data). Conteneurisation et orchestration via Docker Compose. Tests unitaires couvrant cas clés (auth, validation decks).",
+    "description": "Plateforme de jeu de cartes en architecture microservices avec authentification JWT sécurisée, gestion de decks/cartes, sessions de jeu et IA basique en cours de développement. Intégration SQL Server (auth) et MongoDB (data). Conteneurisation et orchestration via Docker Compose. Tests unitaires couvrant cas clés (auth, validation decks).",
     "technologies": "C#, .NET 8, JWT, EF Core, SQL Server, MongoDB, Ocelot Gateway, Docker, xUnit",
     "highlights": "4 microservices interconnectés ; Auth service-to-service ; CI/CD potentiel ; Couverture tests ~40% ; Scalable pour multi-joueurs.",
     "link": "https://github.com/Iceland549/MagicTheBeginning_clone"
