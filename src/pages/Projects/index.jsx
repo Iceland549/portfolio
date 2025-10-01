@@ -13,11 +13,15 @@ function Projects() {
     const [modalIsOpen, setModalIsOpen] = useState(false);
     const [modalTitle, setModalTitle] = useState('');
     const [modalDescription, setModalDescription] = useState([]);
+    const [modalTechnologies, setModalTechnologies] = useState('');
+    const [modalHighlights, setModalHighlights] = useState('');
     const [modalLink, setModalLink] = useState('');
 
-    const openModal = (title, description, link) => {
+    const openModal = (title, description, technologies, highlights, link) => {
         setModalTitle(title);
-        setModalDescription(description);
+        setModalDescription(Array.isArray(description) ? description : [description]); // Handle string or array for backward compat
+        setModalTechnologies(technologies);
+        setModalHighlights(highlights);
         setModalLink(link);
         setModalIsOpen(true);
     };
@@ -41,6 +45,8 @@ function Projects() {
                             key={project.id}
                             title={project.title}
                             description={project.description}
+                            technologies={project.technologies}
+                            highlights={project.highlights}
                             link={project.link}
                             openModal={openModal}
                         />
@@ -51,6 +57,8 @@ function Projects() {
                     isClose={closeModal}
                     title={modalTitle}
                     description={modalDescription}
+                    technologies={modalTechnologies}
+                    highlights={modalHighlights}
                     link={modalLink}
                 />
             </article>
